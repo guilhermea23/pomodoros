@@ -11,8 +11,8 @@ function github() {
 }
 
 function play() {
-  minutes = 0
-  seconds = 5
+  minutes = 24
+  seconds = 59
 
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
