@@ -1,5 +1,5 @@
 body{
-  background: #272943;
+  background: #002f67;
   font-family: 'Pacifico', cursive;
 }
 
@@ -15,7 +15,7 @@ a:active{
 .container{
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #73c04a;
   text-align: center;
 }
 
@@ -23,10 +23,10 @@ a:active{
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#fff;
+  color:#73c04a;
   width:20rem;
   height:20rem;
-  border:.3em solid #fff;
+  border:.3em solid #73c04a;
   border-radius: 10rem;
   text-align: center;
   font-weight: bolder;
@@ -41,10 +41,14 @@ a:active{
   min-width: 8em;
   height: 4em;
   cursor: pointer;
-  color:#fff;
+  background-color: #fff;
   border:2px solid transparent;
   margin:2em;
   box-shadow: 2px 2px transparent;
+}
+
+.button-time-stop-icon{
+  color: #002f67;
 }
 .button-time:hover{
   opacity: 0.8;
@@ -55,7 +59,11 @@ a:active{
 }
 
 #start{
-  background: #3CB371;
+  background: #73c04a;
+}
+
+.start-play-icon{
+  color: white;
 }
 
 #stop{
