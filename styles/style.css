@@ -1,89 +1,47 @@
-body{
-  background: #002f67;
-  font-family: 'Pacifico', cursive;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: Inter;
 }
 
-h1:hover{
-  color: #FF8C00;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-a:active{
-  color:#fff;
-}
-.container{
+.Container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  color: #73c04a;
-  text-align: center;
-}
-
-#timer{
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color:#73c04a;
-  width:20rem;
-  height:20rem;
-  border:.3em solid #73c04a;
-  border-radius: 10rem;
-  text-align: center;
-  font-weight: bolder;
+
 }
 
-#clock{
+h1 {
+  font-weight: 500;
+}
+
+.Content {
   display: flex;
-  justify-content: center;
 }
 
-.button-time{
-  min-width: 8em;
-  height: 4em;
-  cursor: pointer;
-  background-color: #fff;
-  border:2px solid transparent;
-  margin:2em;
-  box-shadow: 2px 2px transparent;
+h4 {
+  font-size: 2rem;
 }
 
-.button-time-stop-icon{
-  color: #002f67;
-}
-.button-time:hover{
-  opacity: 0.8;
-  border: 1px solid #d4dad7c0;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
-  transition:0.3s ease-in-out;
-}
-
-#start{
-  background: #73c04a;
-}
-
-.start-play-icon{
+button {
+  border: none;
+  border-radius: 0.313rem;
+  background-color: #66ff66;
   color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 9rem;
+  cursor: pointer;
+  height: 3rem;
+  transition: 0.2s;
 }
 
-#stop{
-  color:#272343;
-}
-#stop:hover{
-  opacity: 0.8;
-}
-
-.row,.column{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size:2em;
-}
-
-#result{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size:32px;
+button:hover {
+  transition: 0.2s;
+  background-color: #66ff90;
 }

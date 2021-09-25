@@ -7,45 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pomodoro">
   <link rel="shortcut icon" href="../assets/icon/fab fa-algolia.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Yaldevi:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <script src="../scripts/main.js"></script>
   <script src="https://kit.fontawesome.com/d914ec8c00.js" crossorigin="anonymous"></script>
-  <title>Pomodoro's</title>
+  <title>CJR - Pomodoro</title>
 </head>
 
-<body onload="template()">
-  <div class="container">
-    <h1 onclick="github()">My Pomodoros</h1>
-  </div>
-
-  <!-- Aqui é onde vai rodar o main.js -->
-  <div id="clock">
-    <div id="timer">
-      <div class="row">
-        <div class="column">
-          <h4 id="minutes"></h4>
-        </div>
-        <div class="column">
-          <h4>:</h4>
-        </div>
-        <div class="column">
-          <h4 id="seconds"></h4>
-        </div>
-      </div>
+<body> 
+  <div class="Container">
+    <h1>PomodoCJR</h1>
+    <div class="Content">
+      <h4 id="minutes"></h4>
+      <h4>:</h4>
+      <h4 id="seconds"></h4>
+    </div>
+    <div class="buttonsContainer">
+      <button id="buttonStart"></button>
+      <button id="buttonStop" hidden></button>
     </div>
   </div>
-
-  <div id="result">
-    <h3 id="done"></h3>
-  </div>
-
-  <div class="container">
-    <button class="button-time" id="start" onclick="play()"><i class="fas fa-play fa-2x start-play-icon"></i></button>
-    <button class="button-time" id="stop" onclick="location.reload()">
-      <i class="fas fa-redo-alt fa-2x button-time-stop-icon"></i>
-    </button>
-  </div>
+  <script src="../scripts/main.js"></script>
 </body>
 
 </html>
