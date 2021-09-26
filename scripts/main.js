@@ -7,19 +7,22 @@ document.getElementById("seconds").innerHTML = seconds;
 
 document.getElementById("buttonStart").innerHTML = comecar;
 
-let button = document.getElementById("buttonStart");
-let button2 = document.getElementById("buttonStop");
+let buttonStart = document.getElementById("buttonStart");
+let buttonPause = document.getElementById("buttonStop");
 
-button2.innerHTML = 'Pause';
+var minutes_storage = 24;
+var seconds_storage = 59;
 
-button.addEventListener("click", function() {
-  button.hidden = true;
-  button2.hidden = false;
+buttonPause.innerHTML = 'Pause';
+
+buttonStart.addEventListener("click", function() {
+  buttonStart.hidden = true;
+  buttonPause.hidden = false;
   var minutes_interval = setInterval(minutesDecres, 60000);
   var seconds_interval = setInterval(secondsDecres, 1000);
   
-  minutes = 24
-  seconds = 59
+  minutes = minutes_storage;
+  seconds = seconds_storage;
 
   function minutesDecres() {
     minutes = minutes - 1
@@ -44,10 +47,12 @@ button.addEventListener("click", function() {
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 
-  button2.addEventListener("click", function () {
+  buttonPause.addEventListener("click", function () {
+    minutes_storage = document.getElementById("minutes").innerHTML;
+    seconds_storage = document.getElementById('seconds').innerHTML;
     clearInterval(minutes_interval);
     clearInterval(seconds_interval);
-    button2.hidden = true;
-    button.hidden = false;
+    buttonPause.hidden = true;
+    buttonStart.hidden = false;
   });
 });
