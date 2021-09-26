@@ -1,6 +1,7 @@
 let minutes = 25;
 let seconds = "00";
 const comecar = 'Começar!';
+var sound = new Audio('../assets/ragnarok-online-level-up-sound.mp3');
 
 document.getElementById("minutes").innerHTML = minutes;
 document.getElementById("seconds").innerHTML = seconds;
@@ -10,8 +11,8 @@ document.getElementById("buttonStart").innerHTML = comecar;
 let buttonStart = document.getElementById("buttonStart");
 let buttonPause = document.getElementById("buttonStop");
 
-var minutes_storage = 24;
-var seconds_storage = 59;
+var minutes_storage = 0;
+var seconds_storage = 10;
 
 buttonPause.innerHTML = 'Pause';
 
@@ -39,6 +40,9 @@ buttonStart.addEventListener("click", function() {
         clearInterval(seconds_interval);
 
         document.getElementById("done").innerHTML ="Pomodoro completo! Faça um intervalo!";
+        buttonPause.hidden = true;
+        buttonStart.hidden = true;
+        sound.play();
       }
       seconds = 60
     }
