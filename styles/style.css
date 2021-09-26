@@ -47,6 +47,10 @@ a:active{
   box-shadow: 2px 2px transparent;
 }
 
+#stop{
+
+}
+
 .button-time-stop-icon{
   color: #002f67;
 }
@@ -67,7 +71,7 @@ a:active{
 }
 
 #stop{
-  color:#272343;
+  background-color: red;
 }
 #stop:hover{
   opacity: 0.8;

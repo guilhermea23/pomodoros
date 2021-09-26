@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="../assets/icon/fab fa-algolia.ico" type="image/x-icon">
   <link rel="stylesheet" href="../styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <script src="../scripts/main.js"></script>
   <script src="https://kit.fontawesome.com/d914ec8c00.js" crossorigin="anonymous"></script>
   <title>Pomodoro's</title>
 </head>
@@ -41,11 +40,15 @@
   </div>
 
   <div class="container">
-    <button class="button-time" id="start" onclick="play()"><i class="fas fa-play fa-2x start-play-icon"></i></button>
-    <button class="button-time" id="stop" onclick="location.reload()">
+  
+    <button class="button-time" id="start"><i class="fas fa-play fa-2x start-play-icon"></i></button>
+     <button class="button-time" hidden id="stop">Pause</button> 
+    <button class="button-time" id="reload" onclick="location.reload()">
       <i class="fas fa-redo-alt fa-2x button-time-stop-icon"></i>
     </button>
   </div>
+
+  <script src="../scripts/main.js"></script>
 </body>
 
 </html>
