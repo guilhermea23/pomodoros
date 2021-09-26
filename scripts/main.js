@@ -25,13 +25,13 @@ buttonStart.addEventListener("click", function() {
   seconds = seconds_storage;
 
   function minutesDecres() {
-    minutes = minutes - 1
-    document.getElementById("minutes").innerHTML = minutes
+    minutes = minutes - 1;
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
   }
 
   function secondsDecres() {
-    seconds = seconds - 1
-    document.getElementById("seconds").innerHTML = seconds;
+    seconds = seconds - 1;
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
 
     if (seconds <= 0) {
       if (minutes <= 0) {
