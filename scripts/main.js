@@ -1,4 +1,4 @@
-let minutes = 25;
+let minutes = localStorage.getItem("sessionTime");
 let seconds = "00";
 
 /* var sound = new Audio("../assets/ragnarok-online-level-up-sound.mp3"); */
@@ -15,10 +15,10 @@ function template() {
 let buttonStart = document.getElementById("start");
 let buttonPause = document.getElementById("stop");
 
-var minutes_storage = 24;
+var minutes_storage = minutes - 1;
 var seconds_storage = 59;
 
-console.log(buttonStart)
+// console.log(buttonStart)
 
 
 buttonStart.addEventListener("click", function () {
