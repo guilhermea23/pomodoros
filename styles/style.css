@@ -41,6 +41,7 @@ a:active{
   min-width: 8em;
   height: 4em;
   cursor: pointer;
+  color:#fff;
   background-color: #fff;
   border:2px solid transparent;
   margin:2em;
