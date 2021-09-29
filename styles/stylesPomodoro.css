@@ -1,94 +1,94 @@
-body{
+body {
   background: #002f67;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 
-h1:hover{
-  color: #FF8C00;
+h1:hover {
+  color: #ff8c00;
   text-decoration: underline;
   cursor: pointer;
 }
 
-a:active{
-  color:#fff;
+a:active {
+  color: #fff;
 }
-.container{
+.container {
   display: flex;
   justify-content: center;
   color: #73c04a;
   text-align: center;
 }
 
-#timer{
+#timer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#73c04a;
-  width:20rem;
-  height:20rem;
-  border:.3em solid #73c04a;
+  color: #73c04a;
+  width: 20rem;
+  height: 20rem;
+  border: 0.3em solid #73c04a;
   border-radius: 10rem;
   text-align: center;
   font-weight: bolder;
 }
 
-#clock{
+#clock {
   display: flex;
   justify-content: center;
 }
 
-.button-time{
+.button-time {
   min-width: 8em;
   height: 4em;
   cursor: pointer;
-  color:#fff;
+  color: #fff;
   background-color: #fff;
-  border:2px solid transparent;
-  margin:2em;
+  border: 2px solid transparent;
+  margin: 2em;
   box-shadow: 2px 2px transparent;
 }
 
-#stop{
-
+#stop {
 }
 
-.button-time-stop-icon{
+.button-time-stop-icon {
   color: #002f67;
 }
-.button-time:hover{
+.button-time:hover {
   opacity: 0.8;
   border: 1px solid #d4dad7c0;
   padding-top: 0.6em;
   padding-bottom: 0.6em;
-  transition:0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-#start{
+#start {
   background: #73c04a;
 }
 
-.start-play-icon{
+.start-play-icon {
   color: white;
 }
 
-#stop{
+#stop {
   background-color: red;
 }
-#stop:hover{
+#stop:hover {
   opacity: 0.8;
 }
 
-.row,.column{
+.row,
+.column {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:2em;
+  font-size: 2em;
 }
 
-#result{
+#result {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size:32px;
+  font-size: 32px;
 }
