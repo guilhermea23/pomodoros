@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" translate="yes">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pomodoro">
+  <link rel="shortcut icon" href="../assets/icon/fab fa-algolia.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/stylesPomodoro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d914ec8c00.js" crossorigin="anonymous"></script>
+  <title>Pomodoro's</title>
+</head>
+
+<body onload="template()">
+  <div class="container">
+    <h1 onclick="github()">My Pomodoros</h1>
+  </div>
+
+  <!-- Aqui é onde vai rodar o main.js -->
+  <div id="clock">
+    <div id="timer">
+      <div class="row">
+        <div class="column">
+          <h4 id="minutes"></h4>
+        </div>
+        <div class="column">
+          <h4>:</h4>
+        </div>
+        <div class="column">
+          <h4 id="seconds"></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+u
+  <div id="result">
+    <h3 id="done"></h3>
+  </div>
+
+  <div class="container">
+    <button class="button-time" id="start"><i class="fas fa-play fa-2x start-play-icon"></i></button>
+
+    <button class="button-time" id="stop" hidden><i class="fas fa-pause"></i></button>
+    <button class="button-time" id="reload" onclick="location.reload()">
+      <i class="fas fa-redo-alt fa-2x button-time-stop-icon"></i>
+    </button>
+  </div>
+
+  <script src="../scripts/pomodoro.js"></script>
+</body>
+
+</html>

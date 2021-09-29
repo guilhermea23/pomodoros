@@ -5,6 +5,7 @@ localStorage.setItem("sessionTime", 25)
 localStorage.setItem("breakTime", 5)
 
 const sessionTime = document.getElementById("sessionTime");
+
 sessionTime.addEventListener("change", function (e) {
   sessionTimeSubmit = e.target.value;
   localStorage.setItem("sessionTime", sessionTimeSubmit)
@@ -19,6 +20,6 @@ breakTime.addEventListener("change", function (e) {
 })
 
 form.addEventListener("submit", function (e) {
-  form.action = 'index.html';
+  form.action = 'pomodoro.html';
 })
 
