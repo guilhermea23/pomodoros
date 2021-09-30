@@ -1,4 +1,9 @@
 <body style="display:flex; justify-content:center;flex-direction:row;flex-wrap:wrap;">
+  <span>Projeto feito com ajuda dos devs:</span>
+
+  [@shyvesCCD](https://github.com/shyvesCCD)
+
+  [@GuiCoelhoDev](https://github.com/GuiCoelhoDev)
 <h1 style="text-align:center;">Pomodoros</h1>
 <ul>
 <li><h2>O que é/são pomodoro(s)?</h2></li>
